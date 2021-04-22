@@ -3,7 +3,6 @@ import React from "react";
 import icono_wc from "../../assets/img/icono_wc.svg";
 import icono_estacionamiento from "../../assets/img/icono_estacionamiento.svg";
 import icono_dormitorio from "../../assets/img/icono_dormitorio.svg";
-import anuncio1 from "../../assets/img/anuncio1.jpg";
 import { Link } from "react-router-dom";
 
 const Anuncio = (props) => {
@@ -11,7 +10,7 @@ const Anuncio = (props) => {
 
   return (
     <div className="anuncio">
-      <img src={anuncio1} alt="anuncio" />
+      <img src={info.imagen_propiedad} alt="anuncio" />
       <div className="contenido-anuncio">
         <h3>{info.nombre_propiedad}</h3>
         <p>{info.desc_corta}</p>

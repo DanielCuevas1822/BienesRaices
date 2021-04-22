@@ -1,7 +1,6 @@
 import React from "react";
 import { useParams } from "react-router";
 
-import blog1 from "../../assets/img/blog1.jpg";
 import Header from "../../components/Header";
 
 import { connect } from "react-redux";
@@ -18,7 +17,7 @@ const SingleBlog = (props) => {
             <div className="centrar-texto">
               <h1 className="fw-300 centrar-texto">{item.nombre_nota}</h1>
 
-              <img src={blog1} alt="Imagen Principal" />
+              <img src={item.imagen_nota} alt="Imagen Principal" />
             </div>
             <main className="contenedor seccion contenido-centrado texto-entrada">
               <p>

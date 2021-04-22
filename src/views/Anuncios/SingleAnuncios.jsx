@@ -4,7 +4,6 @@ import { useParams } from "react-router";
 import icono_wc from "../../assets/img/icono_wc.svg";
 import icono_estacionamiento from "../../assets/img/icono_estacionamiento.svg";
 import icono_dormitorio from "../../assets/img/icono_dormitorio.svg";
-import destacada from "../../assets/img/destacada.jpg";
 import Header from "../../components/Header";
 
 import { connect } from "react-redux";
@@ -19,7 +18,7 @@ const SingleAnuncios = (props) => {
         .map((item,index) => (
           <React.Fragment key={index}>
             <h1 className="fw-300 centrar-texto">{item.nombre_propiedad}</h1>
-            <img className="imagen-destacada" src={destacada} alt="destacada" />
+            <img className="imagen-destacada" src={item.imagen_propiedad} alt="destacada" />
 
             <main className="contenedor seccion contenido-centrado">
               <div className="resumen-propiedad">
