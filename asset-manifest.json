@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/BienesRaices/static/css/main.ff2dc992.chunk.css",
-    "main.js": "/BienesRaices/static/js/main.76554519.chunk.js",
-    "main.js.map": "/BienesRaices/static/js/main.76554519.chunk.js.map",
+    "main.js": "/BienesRaices/static/js/main.3102df2f.chunk.js",
+    "main.js.map": "/BienesRaices/static/js/main.3102df2f.chunk.js.map",
     "runtime-main.js": "/BienesRaices/static/js/runtime-main.35a29125.js",
     "runtime-main.js.map": "/BienesRaices/static/js/runtime-main.35a29125.js.map",
     "static/js/2.374ff70f.chunk.js": "/BienesRaices/static/js/2.374ff70f.chunk.js",
@@ -12,11 +12,8 @@
     "index.html": "/BienesRaices/index.html",
     "static/css/main.ff2dc992.chunk.css.map": "/BienesRaices/static/css/main.ff2dc992.chunk.css.map",
     "static/js/2.374ff70f.chunk.js.LICENSE.txt": "/BienesRaices/static/js/2.374ff70f.chunk.js.LICENSE.txt",
-    "static/media/anuncio1.03035806.jpg": "/BienesRaices/static/media/anuncio1.03035806.jpg",
     "static/media/barras.e4a5ab35.svg": "/BienesRaices/static/media/barras.e4a5ab35.svg",
-    "static/media/blog1.f46f00f2.jpg": "/BienesRaices/static/media/blog1.f46f00f2.jpg",
     "static/media/main.scss": "/BienesRaices/static/media/header.8387de75.jpg",
-    "static/media/destacada.3cd055bc.jpg": "/BienesRaices/static/media/destacada.3cd055bc.jpg",
     "static/media/destacada3.07d6236c.jpg": "/BienesRaices/static/media/destacada3.07d6236c.jpg",
     "static/media/icono1.f3eb4066.svg": "/BienesRaices/static/media/icono1.f3eb4066.svg",
     "static/media/icono2.009004a3.svg": "/BienesRaices/static/media/icono2.009004a3.svg",
@@ -31,6 +28,6 @@
     "static/js/runtime-main.35a29125.js",
     "static/js/2.374ff70f.chunk.js",
     "static/css/main.ff2dc992.chunk.css",
-    "static/js/main.76554519.chunk.js"
+    "static/js/main.3102df2f.chunk.js"
   ]
 }
