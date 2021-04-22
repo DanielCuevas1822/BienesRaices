@@ -1,13 +1,22 @@
 import React from "react";
+import { connect } from "react-redux";
 import Testimonial from "./Testimonial";
 
-const ListaTestimonial = () => {
+const ListaTestimonial = (props) => {
   return (
-    <section class="testimoniales">
-      <h2 class="centrar-texto fw-300">Testimoniales</h2>
-      <Testimonial />
+    <section className="testimoniales">
+      <h2 className="centrar-texto fw-300">Testimoniales</h2>
+      {props.testimoniales.map((item, index) => (
+        <Testimonial key={index} info={item} />
+      ))}
     </section>
   );
 };
 
-export default ListaTestimonial;
+const mapStatetoProps = (state) => {
+  return {
+    testimoniales: state.testimoniales,
+  };
+};
+
+export default connect(mapStatetoProps)(ListaTestimonial);

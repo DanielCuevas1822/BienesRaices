@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 import logo from "../assets/img/logo.svg";
 import barra from "../assets/img/barras.svg";
 
-const Header = () => {
+const Header = (props) => {
+  const { isHome } = props;
   return (
-    //inicio parallax
-    <header className="site-header">
+    <header className={isHome ? "inicio parallax" : "site-header"}>
       <div className="contenedor contenido-header">
         <div className="barra">
           <Link to="/">
@@ -28,7 +28,9 @@ const Header = () => {
           </nav>
         </div>
 
-        {/* <h1>Venta de Casas y Departamentos Exclusivos de Lujo</h1> */}
+        {isHome ? (
+          <h1>Venta de Casas y Departamentos Exclusivos de Lujo</h1>
+        ) : null}
       </div>
     </header>
   );

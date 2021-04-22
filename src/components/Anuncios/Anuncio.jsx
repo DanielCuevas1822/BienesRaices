@@ -6,34 +6,37 @@ import icono_dormitorio from "../../assets/img/icono_dormitorio.svg";
 import anuncio1 from "../../assets/img/anuncio1.jpg";
 import { Link } from "react-router-dom";
 
-const Anuncio = () => {
+const Anuncio = (props) => {
+  const { info } = props;
+
   return (
     <div className="anuncio">
       <img src={anuncio1} alt="anuncio" />
       <div className="contenido-anuncio">
-        <h3>Casa afuera de la Ciudad</h3>
-        <p>
-          Casa con alberca y acabados de lujo fuera de la ciudad, excelente
-          oportunidad
-        </p>
-        <p className="precio">$60000000</p>
+        <h3>{info.nombre_propiedad}</h3>
+        <p>{info.desc_corta}</p>
+        <p className="precio">${info.precio_propiedad}</p>
         <ul className="iconos-caracteristicas">
           <li>
             <img src={icono_wc} alt="icono wc" />
-            <p>5</p>
+            <p>{info.numero_banos}</p>
           </li>
           <li>
             <img src={icono_estacionamiento} alt="icono autos" />
-            <p>6</p>
+            <p>{info.numero_estaci}</p>
           </li>
           <li>
             <img src={icono_dormitorio} alt="icono habitaciones" />
-            <p>8</p>
+            <p>{info.numero_recama}</p>
           </li>
         </ul>
 
-        <Link className="boton boton-amarillo d-block" to="/anuncios/666">VER PROPIEDAD</Link>
-        
+        <Link
+          className="boton boton-amarillo d-block"
+          to={`/anuncios/${info.id_propiedades}`}
+        >
+          VER PROPIEDAD
+        </Link>
       </div>
     </div>
   );

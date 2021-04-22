@@ -1,20 +1,22 @@
 import React from "react";
 import IconosNosotros from "../components/Nosotros/IconosNosotros";
+import Header from "../components/Header";
 
 import nosotros from "../assets/img/nosotros.jpg";
 
 const Nosotros = () => {
   return (
     <React.Fragment>
-      <main class="contenedor">
-        <h1 class="fw-300 centrar-texto">Conoce sobre Nosotros</h1>
+      <Header isHome={false} />
+      <main className="contenedor">
+        <h1 className="fw-300 centrar-texto">Conoce sobre Nosotros</h1>
 
-        <div class="contenido-nosotros">
-          <div class="imagen">
+        <div className="contenido-nosotros">
+          <div className="imagen">
             <img src={nosotros} alt="Imagen sobre Nosotros" />
           </div>
 
-          <div class="texto-nosotros">
+          <div className="texto-nosotros">
             <blockquote>25 años de Experiencia</blockquote>
 
             <p>

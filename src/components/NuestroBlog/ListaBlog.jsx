@@ -1,59 +1,22 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import blog1 from "../../assets/img/blog1.jpg";
+import EntradaBlog from "./EntradaBlog";
+import { connect } from "react-redux";
 
-const ListaBlog = () => {
+const ListaBlog = (props) => {
   return (
-    <section class="blog">
-      <h3 class="centrar-texto fw-300">Nuestro Blog</h3>
-
-      <article class="entrada-blog">
-        <div class="imagen">
-          <img src={blog1} alt="nombre_nota" />
-        </div>
-
-        <div class="texto-entrada">
-          <h4>Terraza en el techo de tu casa</h4>
-
-          <p>
-            Escrito el: <span>2019-08-06</span> por: <span>Luis Perez</span>
-          </p>
-
-          <p>
-            Consejos para construir una teraza en el techo de tu casa, con los
-            mejores materiales y ahorra dinero.
-          </p>
-
-          <Link to="/blog/:665" className="boton boton-amarillo d-block">
-            Ver más
-          </Link>
-        </div>
-      </article>
-
-      <article class="entrada-blog">
-        <div class="imagen">
-          <img src={blog1} alt="nombre_nota" />
-        </div>
-
-        <div class="texto-entrada">
-          <h4>Contruye una alberca en tu hogar</h4>
-
-          <p>
-            Escrito el: <span>2019-08-06</span> por: <span>Luis Perez</span>
-          </p>
-
-          <p>
-            Consejos para construir una teraza en el techo de tu casa, con los
-            mejores materiales y ahorra dinero.
-          </p>
-
-          <Link to="/blog/:665" className="boton boton-amarillo d-block">
-            Ver más
-          </Link>
-        </div>
-      </article>
+    <section className="blog">
+      <h3 className="centrar-texto fw-300">Nuestro Blog</h3>
+      {props.blog.map((item) => (
+        <EntradaBlog key={item.id} info={item} />
+      ))}
     </section>
   );
 };
 
-export default ListaBlog;
+const mapStatetoProps = (state) => {
+  return {
+    blog: state.blog,
+  };
+};
+
+export default connect(mapStatetoProps)(ListaBlog);

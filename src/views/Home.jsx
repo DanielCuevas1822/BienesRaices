@@ -5,23 +5,25 @@ import ListaAnuncios from "../components/Anuncios/ListaAnuncios";
 import ListaTestimonial from "../components/Testimoniales/ListaTestimonial";
 import ListaBlog from "../components/NuestroBlog/ListaBlog";
 import Parallax from "../components/Parallax/Parallax";
+import Header from "../components/Header";
 
 import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <React.Fragment>
+      <Header isHome={true} />
       <IconosNosotos />
       <ListaAnuncios />
       <div className="contenedor seccion">
-        <div class="ver-todos">
+        <div className="ver-todos">
           <Link className="boton boton-verde" to="/anuncios">
             Ver Todas
           </Link>
-        </div>{" "}
+        </div>
       </div>
       <Parallax />
-      <div class="contenedor seccion-inferior seccion">
+      <div className="contenedor seccion-inferior seccion">
         <ListaBlog />
         <ListaTestimonial />
       </div>
