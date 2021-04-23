@@ -17,10 +17,9 @@ const SingleAnuncios = (props) => {
         .filter((item) => item.id_propiedades === parseInt(name))
         .map((item,index) => (
           <React.Fragment key={index}>
-            <h1 className="fw-300 centrar-texto">{item.nombre_propiedad}</h1>
-            <img className="imagen-destacada" src={item.imagen_propiedad} alt="destacada" />
-
+            <h1 className="fw-300 centrar-texto">{item.nombre_propiedad}</h1>            
             <main className="contenedor seccion contenido-centrado">
+            <img className="imagen-destacada" src={item.imagen_propiedad} alt="destacada" />
               <div className="resumen-propiedad">
                 <p className="precio">${item.precio_propiedad}</p>
                 <ul className="iconos-caracteristicas">

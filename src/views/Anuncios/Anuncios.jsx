@@ -6,7 +6,7 @@ const Anuncios = () => {
   return (
     <React.Fragment>
       <Header isHome={false} />
-      <ListaAnuncios/>
+      <ListaAnuncios limite={0} />
     </React.Fragment>
   );
 };

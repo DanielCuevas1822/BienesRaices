@@ -14,7 +14,7 @@ const Home = () => {
     <React.Fragment>
       <Header isHome={true} />
       <IconosNosotos />
-      <ListaAnuncios />
+      <ListaAnuncios limite={3} />
       <div className="contenedor seccion">
         <div className="ver-todos">
           <Link className="boton boton-verde" to="/anuncios">
@@ -24,8 +24,8 @@ const Home = () => {
       </div>
       <Parallax />
       <div className="contenedor seccion-inferior seccion">
-        <ListaBlog />
-        <ListaTestimonial />
+        <ListaBlog limite={2} />
+        <ListaTestimonial limite={2} />
       </div>
     </React.Fragment>
   );

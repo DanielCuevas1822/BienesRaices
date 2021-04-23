@@ -7,7 +7,7 @@ const Blog = () => {
     <React.Fragment>
       <Header isHome={false} />
       <main className="contenedor seccion contenido-centrado">
-        <ListaBlog />
+        <ListaBlog limite={0} />
       </main>
     </React.Fragment>
   );
