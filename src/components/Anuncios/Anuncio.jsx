@@ -10,7 +10,7 @@ const Anuncio = (props) => {
 
   return (
     <div className="anuncio">
-      <img src={info.imagen_propiedad} alt="anuncio" />
+      <img src={info.imagen} alt="anuncio" />
       <div className="contenido-anuncio">
         <h3>{info.nombre_propiedad}</h3>
         <p>{info.desc_corta}</p>
