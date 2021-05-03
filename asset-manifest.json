@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/BienesRaices/static/css/main.f962cae2.chunk.css",
-    "main.js": "/BienesRaices/static/js/main.44a403c5.chunk.js",
-    "main.js.map": "/BienesRaices/static/js/main.44a403c5.chunk.js.map",
+    "main.js": "/BienesRaices/static/js/main.63b88523.chunk.js",
+    "main.js.map": "/BienesRaices/static/js/main.63b88523.chunk.js.map",
     "runtime-main.js": "/BienesRaices/static/js/runtime-main.470d95cc.js",
     "runtime-main.js.map": "/BienesRaices/static/js/runtime-main.470d95cc.js.map",
     "static/css/2.ae0c0c0f.chunk.css": "/BienesRaices/static/css/2.ae0c0c0f.chunk.css",
@@ -31,6 +31,6 @@
     "static/css/2.ae0c0c0f.chunk.css",
     "static/js/2.68d238d7.chunk.js",
     "static/css/main.f962cae2.chunk.css",
-    "static/js/main.44a403c5.chunk.js"
+    "static/js/main.63b88523.chunk.js"
   ]
 }
