@@ -11,7 +11,7 @@ const SingleBlog = (props) => {
     <React.Fragment>
       <Header isHome={false} />
       {props.blog
-        .filter((item) => item.id_nota === parseInt(name))
+        .filter((item) => item.id === name)
         .map((item, index) => (
           <React.Fragment key={index}>
             <div className="centrar-texto">

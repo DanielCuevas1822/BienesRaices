@@ -20,7 +20,7 @@ const SingleAnuncios = (props) => {
     <React.Fragment>
       <Header isHome={false} />
       {props.propiedades
-        .filter((item) => item.id_propiedades === parseInt(name))
+        .filter((item) => item.id === name)
         .map((item, index) => (
           <React.Fragment key={index}>
             <h1 className="fw-300 centrar-texto">{item.nombre_propiedad}</h1>

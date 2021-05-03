@@ -32,7 +32,7 @@ const Anuncio = (props) => {
 
         <Link
           className="boton boton-amarillo d-block"
-          to={`/anuncios/${info.id_propiedades}`}
+          to={`/anuncios/${info.id}`}
         >
           VER PROPIEDAD
         </Link>

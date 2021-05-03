@@ -19,7 +19,7 @@ const Entrada = (props) => {
         <p>{info.descri_corta}</p>
 
         <Link
-          to={`/blog/${info.id_nota}`}
+          to={`/blog/${info.id}`}
           className="boton boton-amarillo d-block"
         >
           Ver más
