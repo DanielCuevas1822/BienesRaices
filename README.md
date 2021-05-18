@@ -1,6 +1,6 @@
 # BienesRaices
 
-_Bienes Raíces is a web app to practice React and other tools. It is a web application in which real estate sales services are disclosed.It is a project carried out for learning purposes._
+_Bienes Raíces is a web app to practice React and other tools. It is a web application in which real estate sales services are disclosed.It is a project carried out for learning purposes. Bienes Raices have a [admin page](https://github.com/DanielCuevas1822/BienesRaicesAdmin)_
 
 _Concepts learned in this proyect:_
 
